@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ex. 08</title>
+
+        <style>
+            label {
+                display:block;
+                font-size: 14px;
+                margin: 10px 0 10px;
+            }
+        </style>
+	</head>
+
+	<body>
+		
+        <label for="hora">Informe que horas são</label>
+        <input type="time">
+
+        <br/>
+        <br/>
+
+        <fieldset>
+            <legend>Para qual cidade deseja converter?</legend>
+            
+            <label for="lisboa"><input type="radio" name="cidade" value="lisboa">Lisboa</label>
+            <label for="nova-iorque"><input type="radio" name="cidade" value="nova-iorque">Nova Iorque</label>
+            <label for="cidade-do-mexico"><input type="radio" name="cidade" value="cidade-do-mexico">Cidade do Mexico</label>
+            <label for="toquio"><input type="radio" name="cidade" value="toquio">Toquio</label>
+            <label for="berlim"><input type="radio" name="cidade" value="berlim">Berlim</label>
+        </fieldset>
+
+        <br/>
+        <input type="submit" value="Converter">
+
+	</body>
+</html>

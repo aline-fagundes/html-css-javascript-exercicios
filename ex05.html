@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ex. 05</title>
+
+        <style>
+            form label, form legend {
+                display:block;
+                font-size: 15px;
+                margin: 0 0 10px;
+            }
+        </style>
+	</head>
+
+	<body>
+		
+        <form>
+            <label for="valor">Valor</label>
+            <input type="number">
+    
+            <br/>
+            <br/>
+            <br/>
+
+            <fieldset>
+                <legend>Qual conversão de moeda deseja efetuar?</legend>
+                
+                <label for="dolar-real"><input type="radio" name="conversao" value="dolar-real">Dólar para Real</label>
+                <label for="real-dolar"><input type="radio" name="conversao" value="real-dolar">Real para Dólar</label>
+                <label for="euro-real"><input type="radio" name="conversao" value="euro-real">Euro para Real</label>
+                <label for="real-euro"><input type="radio" name="conversao" value="real-euro">Real para Euro</label>
+                <label for="libra-real"><input type="radio" name="conversao" value="libra-real">Libra para Real</label>
+                <label for="real-libra"><input type="radio" name="conversao" value="real-libra">Real para Libra</label>
+
+            </fieldset>
+
+            <br/>
+
+            <input type="submit" value="Fazer conversão">
+        </form>
+
+	</body>
+</html>
