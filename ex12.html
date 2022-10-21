@@ -3,36 +3,49 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Ex. 12</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	</head>
 
 	<body>
 
 		<form>
-			<label for="nome">Nome</label>
-			<input type="text" id="nome" class="input-padrao" required>
+			<div class="form-group">
+				<label for="nome">Nome</label>
+				<input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo">
+			  </div>
 
-			<label for="nascimento">Data de nascimento</label>
-			<input type="date" id="nascimento" class="input-padrao" required>
-	
-			<label for="email">Email</label>
-			<input type="email" id="email" class="input-padrao" required placeholder="seu_email@dominio.com">
-			
-			<label for="tel">Telefone</label>
-			<input type="tel" id="tel" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-			
-			<input type="submit" value="Enviar" class="enviar">
+			  <div class="form-group">
+				<label for="nascimento">Data de nascimento</label>
+				<input type="date" class="form-control" id="nascimento">
+			  </div>
+
+			<div class="form-group">
+			  <label for="email">Email</label>
+			  <input type="email" class="form-control" id="email" placeholder="seu_email@dominio.com">
+			</div>
+
+			<div class="form-group">
+			  <label for="telefone">Telefone</label>
+			  <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX">
+			</div>
+
+			<button class="btn btn-outline-dark btn-sm" type="submit">Cadastrar</button>
 		</form>
 
-		<table>
+		<br/>
+
+		<table class="table table-bordered">
 			<thead>
-				<tr>
-					<th>Nome</th>
-					<th>Nascimento</th>
-					<th>Email</th>
-					<th>Telefone</th>
-					<th>Alterar</th>
-					<th>Remover</th>
-				</tr>
+			  <tr>
+				<th scope="col">Nome</th>
+				<th scope="col">Nascimento</th>
+				<th scope="col">Email</th>
+				<th scope="col">Telefone</th>
+
+				<th scope="col">Alterar</th>
+				<th scope="col">Remover</th>
+			  </tr>
 			</thead>
 			<tbody>
 				<tr>
@@ -44,18 +57,23 @@
 					<td></td>
 				</tr>
 			</tbody>
-			<tfoot>
-				<tr>
-					<td>Qtd de produtos: </td>
-					<th>1</th>
-				</tr>
-			</tfoot>
 		</table>
 
 		<div>
-			<p>Quem fez niver?</p>
-			<p>Aniversariantes do dia:</p>
-			<p>Quem fará niver?</p>
+			<p>
+				Quem fez niver? 
+				<input type="text" readonly>
+			</p>
+
+			<p>
+				Aniversariantes do dia:
+				<input type="text" readonly>
+			</p>
+			
+			<p>
+				Quem fará niver?
+				<input type="text" readonly>
+			</p>
 		</div>
 
 	</body>
