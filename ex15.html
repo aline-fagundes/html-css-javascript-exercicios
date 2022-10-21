@@ -6,25 +6,45 @@
 	</head>
 
 	<body>
+		<div>
+			<form>
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seu_email@dominio.com">
+		
+				<label for="senha">Senha</label>
+				<input type="password" id="senha" class="input-padrao" required>
+				
+				<input type="submit" value="Logar" class="enviar">
+			</form>
+		</div>
+
+		<div>
+			<button>Gerenciar marcas</button>
+			<button>Gerenciar produtos</button>
+			<button>Finalizar</button>
+		</div>
+
+
+		<form>
+			<label for="nome-marca">Marca</label>
+			<input type="text" id="nome-marca" class="input-padrao" required>
+
+			<input type="submit" value="Cadastrar marca" class="enviar">
+		</form>
+
+		
+		<form>
+			<label for="nome-produto">Produto</label>
+			<input type="text" id="nome-produto" class="input-padrao" required>
+
+			<label for="nome-marca">Marca</label>
+			<input type="text" id="nome-marca" class="input-padrao" required>
+
+			<label for="valor">Informe o valor do produto</label>
+			<input type="text" id="valor" class="input-padrao" required placeholder="R$00,00">
+
+			<input type="submit" value="Cadastrar marca" class="enviar">
+		</form>
 
 	</body>
 </html>
-
-15.Com base nos conceitos abordados até o presente momento, crie algumas telas
-(cada uma estará em uma DIV diferente). O projeto será tema livre, porém
-precisará contemplar as seguintes regras:
-○ Inicialmente haverá uma div de login, pedindo um e-mail e senha. Caso seja
-realizado o login em até três tentativas, deverá desabilitar o botão por 15
-segundos.
-○ Quando o login for efetuado, haverá uma página com três botões: gerenciar
-marcas, gerenciar produtos e finalizar.
-○ Gerenciar marcas: Poderá cadastrar, listar e remover marcas. Não é
-possível cadastrar marcas de mesmo nome (verificar letras maiúsculas e
-minúsculas). Uma marca não pode ser removida, caso algum produto esteja
-utilizando como referência.
-○ Gerenciar produtos: Poderá cadastrar, listar e remover produtos, os dados
-que devem ser cadastrados são: nome do produto, nome da marca (a marca
-deve ter sido cadastrada na tela de Gerenciar Marcas) e valor do produto.
-Não poderá haver produtos de mesmo nome (verificar letras maiúsculas e
-minúsculas).
-○ Finalizar, volta para a tela de autenticação.
