@@ -7,11 +7,41 @@
 
 	<body>
 
+		<form>
+			<label for="nome">Informe o nome do produto</label>
+			<input type="text" id="nome" class="input-padrao" required>
+
+			<label for="marca">Informe a marca do produto</label>
+			<input type="text" id="marca" class="input-padrao" required>
+	
+			<label for="valor">Informe o valor do produto</label>
+			<input type="text" id="valor" class="input-padrao" required placeholder="R$00,00">
+			
+			<input type="submit" value="Enviar" class="enviar">
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Produto</th>
+					<th>Marca</th>
+					<th>Valor</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Chocolate</td>
+					<td>Hersheys</td>
+					<th>R$5,00</th>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Qtd de produtos: </td>
+					<th>1</th>
+				</tr>
+			</tfoot>
+		</table>
+
 	</body>
 </html>
-
-11. Criar um formulário para pedir o nome de um produto, marca e valor. Abaixo do
-formulário deverá ter uma tabela com as colunas: produto, marca e valor, no
-rodapé da tabela será exibido a quantidade de registros.
-O cadastro, listagem e contabilização de registros será feita via JavaScript, foque
-apenas no layout.
