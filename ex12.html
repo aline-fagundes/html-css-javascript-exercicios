@@ -7,21 +7,56 @@
 
 	<body>
 
+		<form>
+			<label for="nome">Nome</label>
+			<input type="text" id="nome" class="input-padrao" required>
+
+			<label for="nascimento">Data de nascimento</label>
+			<input type="date" id="nascimento" class="input-padrao" required>
+	
+			<label for="email">Email</label>
+			<input type="email" id="email" class="input-padrao" required placeholder="seu_email@dominio.com">
+			
+			<label for="tel">Telefone</label>
+			<input type="tel" id="tel" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+			
+			<input type="submit" value="Enviar" class="enviar">
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Nascimento</th>
+					<th>Email</th>
+					<th>Telefone</th>
+					<th>Alterar</th>
+					<th>Remover</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Qtd de produtos: </td>
+					<th>1</th>
+				</tr>
+			</tfoot>
+		</table>
+
+		<div>
+			<p>Quem fez niver?</p>
+			<p>Aniversariantes do dia:</p>
+			<p>Quem fará niver?</p>
+		</div>
+
 	</body>
 </html>
-
-12.Criar um formulário contendo elementos para obter os seguintes dados:
-○ Nome;
-○ Data de nascimento;
-○ E-mail;
-○ Telefone.
-Também deverá existir uma tabela com as colunas: Nome, Nascimento, E-mail,
-Telefone, Alterar e Remover.
-As opções de cadastro, listagem, alteração e remoção serão feitas nas aulas de
-JavaScript.
-Abaixo da tabela deverão ser listados os nomes e datas de nascimento de todos os
-contatos que fazem aniversário no mês atual. Ao listar essas informações, implemente um
-estilo para as seguintes condições:
-● Quem já fez aniversário;
-● Aniversariante do dia;
-● Quem ainda fará aniversário.
