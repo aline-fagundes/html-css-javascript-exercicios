@@ -1,21 +1,33 @@
-function contarCheckboxes(){
-    var inputs = document.getElementsByTagName('input');
-    var selecionados = 0;
-
-    for(let i = 0; i < inputs.length; i++){
-        if(inputs[i].type == 'checkbox'){
-            if(inputs[i].checked == true){
-            selecionados++;
-            }   
-        }
-    }
-    document.getElementById("total-checked").innerHTML = selecionados;       
-  }
-
-/* function contarCheckboxes() {
-    var totalChecked = $("input[type=checkbox]:checked").length;
+function converter() {
     
-    console.log(totalChecked);
-    document.getElementById("total-checked").innerHTML = totalChecked;       
-} 
-*/
+    var valorInicial = document.querySelector('#valor').value;
+    var conversao = document.querySelector('input[name="conversao"]:checked').value;
+    var valorConvertido = 0;
+
+    switch(conversao){
+        case 'dolar-real':
+            valorConvertido = valorInicial / 0.18;
+        break;
+    
+        case 'real-dolar':
+            valorConvertido = valorInicial * 0.18;
+        break;
+    
+        case 'euro-real':
+            valorConvertido = valorInicial / 0.15;
+        break;
+            
+        case 'real-euro':
+            valorConvertido = valorInicial * 0.15;
+        break;
+
+        case 'libra-real':
+            valorConvertido = valorInicial / 0.13;
+        break;
+
+        case 'real-libra':
+            valorConvertido = valorInicial * 0.13;
+        break;
+    } 
+    document.getElementById('valor-convertido').innerHTML = parseFloat(valorConvertido).toFixed(2);
+ }

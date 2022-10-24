@@ -5,7 +5,8 @@
 		<title>Ex. 06</title>
 
         <style>
-            form label, p {
+            div {
+                padding: 10px;
                 display:block;
                 font-size: 15px;
                 margin: 0 0 10px;
@@ -14,20 +15,18 @@
 	</head>
 
 	<body>
-		
-        <form>
-            <label for="nascimento">Informe sua data de nascimento</label>
-            <input type="date">
+	
+    <div>
+        <label for="nascimento">Informe sua data de nascimento</label>
+        <input type="date" id="nascimento">
 
-            <input type="submit" value="Descobrir signo">
-        </form>
+        <button onclick="revelarSigno()">Traçar signo</button>
 
         <br/>
 
-        <p>
-            Seu signo é...
-            <input type="text" readonly>
-        </p>
+        <p>Seu signo é... </p><span id="signo-revelado"></span>
+    </div>
 
+    <script src="ex06.js"></script>
 	</body>
 </html>
