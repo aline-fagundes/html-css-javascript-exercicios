@@ -5,25 +5,30 @@
 		<title>Ex. 03</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/estilos.css">
 	</head>
 
 	<body>
 		
         <fieldset>
             <legend>Qual cidade deseja conhecer?</legend>
-            <select>
-                <option></option>
-                <option>São Paulo</option>
-                <option>Itu</option>
-                <option>Salto</option>
-                <option>Indaiatuba</option>
-                <option>Jundiai</option>
+
+            <br/><br/>
+
+            <select id="cidade" onchange="descrever()">
+                <option value="sao-paulo">São Paulo</option>
+                <option value="indaiatuba">Indaiatuba</option>
+                <option value="itu">Itu</option>
+                <option value="salto">Salto</option>
+                <option selected></option>
             </select>
         </fieldset>
 
         <br/>
 
-        <input class="form-control" type="text" placeholder="Informações sobre..." readonly>
-        
+        <div><span id="descricao"></span></div>
+       
+        <script src="ex03.js"></script>
 	</body>
 </html>

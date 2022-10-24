@@ -16,19 +16,21 @@
 		
         <h1>Quais ingredientes deseja em seu hambúrguer?</h1>
 
-        <label class="checkbox"><input type="checkbox">Alface</label>
-        <label class="checkbox"><input type="checkbox">Tomate</label>
-        <label class="checkbox"><input type="checkbox">Picles</label>
-        <label class="checkbox"><input type="checkbox">Cebola</label>
-        <label class="checkbox"><input type="checkbox">Bacon</label>
-        <label class="checkbox"><input type="checkbox">Queijo cheddar</label>
-        <label class="checkbox"><input type="checkbox">Queijo prato</label>
-        <label class="checkbox"><input type="checkbox">Ketchup</label>
-        <label class="checkbox"><input type="checkbox">Mostarda</label>
-        <label class="checkbox"><input type="checkbox">Maionese</label>
-        
-        <p>Quantidade de ingredientes selecionados: </p>
-        <input type="text" readonly>
+        <label class="checkbox"><input type="checkbox" value="alface">Alface</label>
+        <label class="checkbox"><input type="checkbox" value="tomate">Tomate</label>
+        <label class="checkbox"><input type="checkbox" value="picles">Picles</label>
+        <label class="checkbox"><input type="checkbox" value="cebola">Cebola</label>
+        <label class="checkbox"><input type="checkbox" value="bacon">Bacon</label>
+        <label class="checkbox"><input type="checkbox" value="queijo-cheddar">Queijo cheddar</label>
+        <label class="checkbox"><input type="checkbox" value="queijo-prato">Queijo prato</label>
+        <label class="checkbox"><input type="checkbox" value="ketchup">Ketchup</label>
+        <label class="checkbox"><input type="checkbox" value="mostarda">Mostarda</label>
+        <label class="checkbox"><input type="checkbox" value="maionese">Maionese</label>
 
+        <button onclick="contarCheckboxes()">Montar hambúrguer!</button>
+        
+        <p>Quantidade de ingredientes selecionados:</p><span id="total-checked"></span>
+
+    <script src="ex04.js"></script>
 	</body>
 </html>
