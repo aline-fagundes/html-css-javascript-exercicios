@@ -1,21 +1,18 @@
-function contarCheckboxes(){
-    var inputs = document.getElementsByTagName('input');
+function contarCheckboxes() {
+    var inputs = document.querySelectorAll('input[type="checkbox"]:checked');
+    var totalChecked = inputs.length;
+    document.getElementById("total-checked").innerHTML = totalChecked;       
+} 
+
+/*function contarCheckboxes(){
+    var inputs = document.querySelectorAll('input[type="checkbox"]');
     var selecionados = 0;
 
     for(let i = 0; i < inputs.length; i++){
-        if(inputs[i].type == 'checkbox'){
-            if(inputs[i].checked == true){
-            selecionados++;
-            }   
-        }
+        if(inputs[i].checked == true){
+        selecionados++;
+        }   
     }
     document.getElementById("total-checked").innerHTML = selecionados;       
   }
-
-/* function contarCheckboxes() {
-    var totalChecked = $("input[type=checkbox]:checked").length;
-    
-    console.log(totalChecked);
-    document.getElementById("total-checked").innerHTML = totalChecked;       
-} 
 */
