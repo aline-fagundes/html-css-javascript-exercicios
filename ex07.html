@@ -16,14 +16,18 @@
 	<body>
 		
         <label for="valor1">Informe um primeiro valor</label>
-        <input type="number">
+        <input type="number" id="valor1">
 
         <label for="valor2">Informe um segundo valor</label>
-        <input type="number">
+        <input type="number" id="valor2">
 
         <label for="valor3">Informe um terceiro valor</label>
-        <input type="number">
+        <input type="number" id="valor3">
 
-        <input type="submit" value="Descobrir qual é menor">
+        <button onclick="obterMenor()">Obter menor número</button>
+
+        <p>O menor é: </p><span id="resultado"></span>
+
+        <script src="ex07.js"></script>
 	</body>
 </html>
