@@ -16,7 +16,7 @@
 	<body>
 		
         <label for="hora">Informe que horas são</label>
-        <input type="time">
+        <input type="time" id="horario">
 
         <br/>
         <br/>
@@ -32,7 +32,10 @@
         </fieldset>
 
         <br/>
-        <input type="submit" value="Converter">
+        <button onclick="converter()">Converter</button>
 
+        <p>Horas: <span id="horario-convertido"></span></p>
+
+        <script src="ex08.js"></script>
 	</body>
 </html>

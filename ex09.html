@@ -17,10 +17,28 @@
 		
         <div>
 			<label for="numero">Número</label>
-			<input type="number" placeholder="Insira um número">
+			<input type="number" placeholder="Insira um número" id="numero">
 		
-            <input type="submit" value="Consultar tabuada">
-		</div>
+            <button onclick="consultarTabuada()">Consultar tabuada</button>
+        </div>
 
+        <hr>
+
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">Número</th>
+                    <th scope="col">Multiplicado por</th>
+                    <th scope="col">Resultado</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <script src="ex09.js"></script>
 	</body>
 </html>
